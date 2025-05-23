@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Consultation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+    <header class="container py-3 border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo gap-2">
+                <img src="images/Logo.png" alt="Paradigm Pet Professionals Logo" width="100" height="100">
+                <span class="logo-name ">Paradigm Pet Professionals</span>
+            </div>
+            
+        <!-- primary navigation bar -->
+        <nav class="primaryN navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Main Page</a></li>
+                <li class="nav-item"><a class="nav-link">Cat Tips</a></li>
+                <li class="nav-item current_page"><a class="nav-link" href="dog.html">Dog Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="small-animal.html">Small Animal</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">New Pet Consultation</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="d-none d-md-flex">
+
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- form -->
+    <section id="contact" class="container my-4 border-bottom pb-4 mb-4">
+        <h2 class="text-center my-4">Contact Us</h2>
+        <form class="needs-validation" novalidate>
+            <!-- Fullname -->
+           <div class="mb-2">
+            
+            <label for="fullname" class="form-label">Fullname:</label>
+            
+            <input type="text" class="form-control" id="fullname" value="Oliver Woods" required>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please enter a valid fullname.</div>
+           </div>
+
+           <!-- Email -->
+           <div class="mb-2">
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" class="form-control" id="email" value="oliver.woods@hotmail.com" required>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please enter a valid email address.</div>
+          </div>
+
+          <!-- Phone Number -->
+           <div class="mb-2">
+            <lable for="number">Phone Number:</lable>
+            <input type="tel" class="form-control" id="number" value="111-111-1111" required>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please enter a valid phone number.</div>
+           </div>
+
+           <!-- Timezone -->
+           <div class="mb-2">
+            <label for="timezone" class="form-label">Timezone:</label>
+            <select class="form-select" id="timezone" required>
+                <option value="PST">Pacific Standard Time</option>
+                <option value="MST">Mountain Standard Time</option>
+                <option value="CST">Central Standard Time</option>
+                <option value="EST">Eastern Standard Time</option>
+            </select>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please select your timezone.</div>
+           </div>
+
+           <!-- Animal Name -->
+           <div class="mb-2">
+            <label for="animal-name" class="form-label">Animal Name:</label>
+            <input type="text" class="form-control" id="animal-name" value="Parasite" required>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please enter a valid pet name.</div>
+           </div>
+
+           <!-- Animal type -->
+           <div class="my-2">
+            <label for="animal-type" class="form-label">Animal Type:</label>
+            <select class="form-select" id="animal-type" required>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Small Animal">Small Animal</option>
+                <option value="Fish">Fish</option>
+                <option value="Snake">Snake</option>
+                <option value="Bird">Bird</option>
+            </select>
+            <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please select your animal type.</div>
+           </div>
+
+           <!-- Animal age -->
+           <div class="mb-4">
+            <label for="age-range" class="form-label">Age Range: <span id="ageRangeValue">10</span></label>
+            <input type="range" class="form-range" min="0" max="25" value="10" id="age-range" oninput="ageRangeValue.textContent = this.value">
+           </div>
+           <div class="invalid-feedback position-absolute top-0 end-0 translate-middle-y text-danger mt-1 me-2">Please select your animal age range.</div>
+          </div>
+          
+
+           <!-- Submit Button -->
+           <div class="mb-4">
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+           </div>
+        </form>
+    </section>
+
+    <!-- secondary navigations -->
+    <footer class="container  d-flex">
+        <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+        <div class="ms-auto">
+            <a href="/privacy">Privacy Policy</a> | 
+            <a href="/terms">Terms of Service</a>
+    </footer>
+</body>
+</html>
