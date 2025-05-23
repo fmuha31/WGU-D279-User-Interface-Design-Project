@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="container py-3 border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo gap-2">
+                <img src="images/Logo.png" alt="Paradigm Pet Professionals Logo" width="100" height="100">
+                <span class="logo-name ">Paradigm Pet Professionals</span>
+            </div>
+            
+            <!-- makes form responsive, by hidden on small screens -->
+            <div class="d-none d-md-flex">
+                <form action="/search" method="GET" class="search-bar" class="col">
+                    <input type="search" name="q" placeholder="Search..." aria-label="Search">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+        </div>
+          
+        <!-- primary navigations bar -->
+        <nav class="primaryN navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Main Page</a></li>
+                <li class="nav-item"><a class="nav-link">Cat Tips</a></li>
+                <li class="nav-item current_page"><a class="nav-link" href="dog.html">Dog Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="small-animal.html">Small Animal</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">New Pet Consultation</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="container">
+        <div class="row my-4 border-bottom pb-4 mb-4">
+
+            <aside class="secondaryN navbar col-md-3 border-end pe-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#main-dog" class="nav-link">Dog Facts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diet">Diet & Exercise</a></li>
+                    <li class="nav-item"><a class="current_page nav-link">Grooming & Handling</a></li>
+                    <li class="nav-item"><a class="nav-link">Vaccinations & Medications</a></li>
+                </ul>
+            </aside>
+
+            
+
+            <section id="main-dog" class="col-md-9">
+                <h1 class="text-center my-5">Dog Tips</h1>
+                <h2 class="text-center" id="facts">Facts</h2>
+                <p class="mb5">The domestic dog is an extremely social animal and offers a diverse variety of choices as
+                    there are well over 300 breeds recognized by the World Canine Organization. Adopting a
+                    dog offers mutual benefits between dog and owner. Many studies cite the social benefits of
+                    having a companion as well as the reduced feelings of loneliness from adopting a dog.
+                    Studies even show medical indicators such as reduced blood pressure and improved lipid
+                    profiles. If you have a dog, it is important to make sure that you care for your dog; be
+                    mindful of what you feed your dog and provide enough opportunities for exercise. In this
+                    page, you will find more information about how to care for your pets throughout the various
+                    stages of their lives.</p>
+
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm my-3" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Diet & Exercise</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Grooming & Handling</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Vaccinations & Medications</button>
+                    </li>
+                  </ul>
+                  <h2 class="text-center" id="stages">Stages of cats life</h2>
+                <div>
+                    <h3 id="diet">Diet & Exercise</h3>
+                    <p>Grooming & Handling
+                        Keeping your furry family member clean is important to its health. So be sure to brush
+                        frequently to reduce the amount of shedding and prevent matted and tangled fur that can
+                        prove to be extremely difficult to remove. Check for insects such as ticks and fleas,
+                        especially after visiting heavily wooded areas. Bathing is not only important to your dog’s
+                        health but can be an exercise depending on how strong willed the dog is. Rinse all of the
+                        soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your
+                        puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how
+                        you handle your loved one. No matter the size of your dog, you need to be cautious as you
+                        carry your canine. If you have a small dog, then cradle the pup with one hand under the
+                        chest and the forearm supporting the back half. If it is a large dog, reach under the belly
+                        with both your arms perpendicular to the dog, and use each arm to support the chest and
+                        rear as you lift.</p>
+                    
+                    <img src="images/dog.png" alt="two dogs happily smiling and looking up" width="50%" height="40%"  class="mx-auto d-block mt-3">
+                
+            </section>
+
+        </div>
+
+
+    <footer class="container d-flex">
+        <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+        <div class="ms-auto">
+            <a href="/privacy">Privacy Policy</a> | 
+            <a href="/terms">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
