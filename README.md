@@ -1,5 +1,5 @@
 # WGU-D279-User-Interface-Design-Assessment
-Hello! I'm Fatir, a Software Engineering major at WGU. This repository contains my User Interface Design Assessment project.
+Hello! I'm Fatir, a Software Engineering major at WGU. This repository contains my User Interface Design Assessment project. I used HTML and included Bootstrap via CDN for styling using the compiled CSS file.
 
 ## Creator
 **Fatir Muhammad**
